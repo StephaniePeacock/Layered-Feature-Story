@@ -39,6 +39,7 @@ body{
 .lede{
     max-width:var(--measure);
     font-size:1.25rem;
+    margin-bottom: 3rem;
 }
 .issue-badge{
     padding:0.5rem;
@@ -116,6 +117,7 @@ img{
     font-size: 1rem;
 }
 .shape-portrait{
+    float:inline-end;
     width:min(65%,30rem);
     margin:0 1rem 1rem 0;
 }
@@ -126,9 +128,12 @@ img{
 }
 @supports (shape-outside:polygon(0% 100%, 0% 89%, 9% 76%, 31% 75%, 35% 55%, 42% 39%, 54% 29%, 60% 16%, 65% 2%, 73% 4%, 82% 0%, 90% 4%, 100% 0%, 100% 100%)){
     .shape-portrait{
-        float:inline-end;
         shape-outside: polygon(0% 100%, 0% 89%, 9% 76%, 31% 75%, 35% 55%, 42% 39%, 54% 29%, 60% 16%, 65% 2%, 73% 4%, 82% 0%, 90% 4%, 100% 0%, 100% 100%);
         shape-margin:1rem;}
+}
+.censored {
+    background-color: var(--color-action);
+    color: var(--color-action);
 }
 @media (min-width:52rem){
     main{
