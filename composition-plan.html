@@ -45,13 +45,40 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Example only</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
+                        <td><code>.issue-badge</code></td> <!-- Element -->
+                        <td>Indicates the specific crawler number that is being viewed</td><!-- Content purpose -->
+                        <td>Displays after the introduction paragraph.</td><!-- Normal-flow baseline -->
+                        <td>Absolute position, clip-path: polygon - pecisely positioned crown shape at bottom of the header</td><!-- Chosen technique and why -->
+                        <td>Header - none</td><!-- Containing block / stacking context -->
+                        <td>@supports (clip-path: polygon()) is used, if it returns false, normal flow baseline is displayed</td><!-- Fallback or disengagement -->
+                        <td>Verified all target browser sizes, disabled @supports styles</td><!-- Required test -->
+                    </tr>
+                    <tr>
+                        <td><code>.feature-figure img</code></td><!-- Element -->
+                        <td>Provide visual that complements the pull-out quote.</td><!-- Content purpose -->
+                        <td>Image is displayed block in its original aspect ratio and shape.</td><!-- Normal-flow baseline -->
+                        <td>clip-path: inset - hide the corners of the image</td><!-- Chosen technique and why -->
+                        <td>.featur-figure - none</td><!-- Containing block / stacking context -->
+                        <td>@supports (clip-path: inset()) is used, if it returns false normal flow baseline is displayed</td><!-- Fallback or disengagement -->
+                        <td>Verified all target browser sizes, disabled @supports styles</td><!-- Required test -->
+                    </tr>
+                    <tr>
+                        <td><code>.pull-quote</code></td><!-- Element -->
+                        <td>Provide a humorous quote that ties into the above image.</td><!-- Content purpose -->
+                        <td>Displayed as a block element within the section.</td><!-- Normal-flow baseline -->
+                        <td>position:sticky - maximize the duration the quote is seen.</td><!-- Chosen technique and why -->
+                        <td>section-one - highest level z-index (sticky)</td><!-- Containing block / stacking context -->
+                        <td>@supports (position:sticky) is used, if it returns false normal flow baseline is displayed</td><!-- Fallback or disengagement -->
+                        <td>Verified all target browser sizes, disabled @supports styles</td><!-- Required test -->
+                    </tr>
+                    <tr>
+                        <td>Example only</td><!-- Element -->
+                        <td>Replace</td><!-- Content purpose -->
+                        <td>Replace</td><!-- Normal-flow baseline -->
+                        <td>Replace</td><!-- Chosen technique and why -->
+                        <td>Replace</td><!-- Containing block / stacking context -->
+                        <td>Replace</td><!-- Fallback or disengagement -->
+                        <td>Replace</td><!-- Required test -->
                     </tr>
                 </tbody>
             </table>
