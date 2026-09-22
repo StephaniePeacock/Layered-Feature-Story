@@ -188,16 +188,21 @@ img{
     inset-block-start:11.5rem;
     inset-inline-end:4.3rem;
 }
-@media (max-width:350px) {
+@media (min-width:767px) {
     .overlay {
         inset-block-start:11.5rem;
         inset-inline-end:4.3rem;
     }
 }
-@media (min-width:767px) and (max-width:1076px) {
+@media (min-width:579px) and (max-width:766px) {
     .overlay {
-        inset-block-start:11.5rem;
-        inset-inline-end:4.3rem;
+        inset-inline-end:3.6rem;
+    }
+}
+@media (max-width:578px) {
+    .overlay {
+        inset-block-start:1rem;
+        inset-inline-end:1rem;
     }
 }
 .documentation{
